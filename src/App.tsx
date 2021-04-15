@@ -5,6 +5,7 @@ import  DEFAULT_THEME from './constants/themes'
 import { toggles } from './constants'
 import Header from './components/Header/Header'
 import './App.css';
+import Routes from './routes/router';
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <GlobalStyle />
       <Grommet theme={DEFAULT_THEME}>
         <FeatureTogglesContext.Provider value={toggles}>
-          <Header />
+          <Routes>
+            <Header />
+          </Routes>
         </FeatureTogglesContext.Provider>
       </Grommet>
     </div>
