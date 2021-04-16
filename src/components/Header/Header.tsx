@@ -9,6 +9,7 @@ const HeaderTitle = styled.h1`
   line-height: 36px;
   color: white;
   font-size: 56px;
+  line-height: 56px;
 `;
 
 function Header() {

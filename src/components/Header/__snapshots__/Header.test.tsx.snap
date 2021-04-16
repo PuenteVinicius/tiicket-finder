@@ -41,6 +41,7 @@ Object {
   line-height: 36px;
   color: white;
   font-size: 56px;
+  line-height: 56px;
 }
 
 @media only screen and (max-width:768px) {
@@ -73,7 +74,7 @@ Object {
       class="StyledBox-sc-13pk1d4-0 gczVjq"
     >
       <h1
-        class="Header__HeaderTitle-oil6jy-0 bpCTa-D"
+        class="Header__HeaderTitle-oil6jy-0 jhEtyR"
       >
         Ticket Finder
       </h1>
