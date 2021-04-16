@@ -11,7 +11,7 @@ describe("Home component", () => {
 
   it("Should render text correctly", () => {
     expect(
-      view.getByText("Busque por uma banda ou artista")
+      view.getByText("Busque por um artista")
     ).toBeInTheDocument();
     expect(
       view.getByText(

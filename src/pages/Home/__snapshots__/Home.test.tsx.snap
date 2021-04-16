@@ -25,7 +25,7 @@ Object {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding: 96px;
+  padding: 48px;
 }
 
 .c1 {
@@ -48,6 +48,32 @@ Object {
   overflow: auto;
 }
 
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: 48px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  min-width: 0;
+  min-height: 0;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 768px;
+}
+
 .c2 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -56,6 +82,73 @@ Object {
   line-height: 56px;
   max-width: 1200px;
   font-weight: 600;
+}
+
+.c6 {
+  box-sizing: border-box;
+  font-size: inherit;
+  font-family: inherit;
+  border: none;
+  -webkit-appearance: none;
+  background: transparent;
+  color: inherit;
+  width: 100%;
+  padding: 11px;
+  font-weight: 600;
+  margin: 0;
+  border: 1px solid rgba(0,0,0,0.33);
+  border-radius: 4px;
+}
+
+.c6:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #6FFFB0;
+}
+
+.c6:focus > circle,
+.c6:focus > ellipse,
+.c6:focus > line,
+.c6:focus > path,
+.c6:focus > polygon,
+.c6:focus > polyline,
+.c6:focus > rect {
+  outline: none;
+  box-shadow: 0 0 2px 2px #6FFFB0;
+}
+
+.c6:focus::-moz-focus-inner {
+  border: 0;
+}
+
+.c6::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+.c6::-moz-placeholder {
+  color: #AAAAAA;
+}
+
+.c6:-ms-input-placeholder {
+  color: #AAAAAA;
+}
+
+.c6::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+.c6::-moz-focus-inner {
+  border: none;
+  outline: none;
+}
+
+.c6:-moz-placeholder,
+.c6::-moz-placeholder {
+  opacity: 1;
+}
+
+.c5 {
+  position: relative;
+  width: 100%;
 }
 
 .c3 {
@@ -69,13 +162,19 @@ Object {
 
 @media only screen and (max-width:768px) {
   .c0 {
-    padding: 48px;
+    padding: 24px;
   }
 }
 
 @media only screen and (max-width:768px) {
   .c1 {
     padding: 24px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .c4 {
+    margin: 24px;
   }
 }
 
@@ -98,20 +197,35 @@ Object {
           <h1
             class="c2"
           >
-            Busque por uma banda ou artista
+            Busque por um artista
           </h1>
           <p
             class="c3"
           >
             Iremos mostrar ingressos e videos do seu artista preferido :)
           </p>
+          <div
+            class="c4"
+          >
+            <div
+              class="c5"
+            >
+              <input
+                autocomplete="off"
+                class="c6"
+                data-testid="artist-input"
+                placeholder="Faça sua busca aqui..."
+                value=""
+              />
+            </div>
+          </div>
         </main>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="StyledBox-sc-13pk1d4-0 fprswP"
+      class="StyledBox-sc-13pk1d4-0 jgRfpS"
     >
       <main
         class="StyledBox-sc-13pk1d4-0 llmstX"
@@ -119,13 +233,28 @@ Object {
         <h1
           class="StyledHeading-sc-1rdh4aw-0 gMhqIv"
         >
-          Busque por uma banda ou artista
+          Busque por um artista
         </h1>
         <p
           class="StyledParagraph-tbetod-0 dRiYAb"
         >
           Iremos mostrar ingressos e videos do seu artista preferido :)
         </p>
+        <div
+          class="StyledBox-sc-13pk1d4-0 ftafLo"
+        >
+          <div
+            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
+          >
+            <input
+              autocomplete="off"
+              class="StyledTextInput-sc-1x30a0s-0 evYMFd"
+              data-testid="artist-input"
+              placeholder="Faça sua busca aqui..."
+              value=""
+            />
+          </div>
+        </div>
       </main>
     </div>
   </div>,
