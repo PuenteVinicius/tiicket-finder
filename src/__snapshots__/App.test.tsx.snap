@@ -15,13 +15,28 @@ Object {
             class="StyledBox-sc-13pk1d4-0 cpGwbg"
           >
             <h1
-              class="Header__HeaderTitle-oil6jy-0 cZfvjy"
+              class="Header__HeaderTitle-oil6jy-0 bpCTa-D"
             >
               Ticket Finder
             </h1>
           </div>
-          <div>
-            Ticket Finder
+          <div
+            class="StyledBox-sc-13pk1d4-0 fHBcfC"
+          >
+            <main
+              class="StyledBox-sc-13pk1d4-0 jDakHy"
+            >
+              <h1
+                class="StyledHeading-sc-1rdh4aw-0 dcjdFF"
+              >
+                Busque por uma banda ou artista
+              </h1>
+              <p
+                class="StyledParagraph-tbetod-0 dRiYAb"
+              >
+                Iremos mostrar ingressos e videos do seu artista preferido :)
+              </p>
+            </main>
           </div>
         </div>
       </div>
@@ -38,13 +53,28 @@ Object {
           class="StyledBox-sc-13pk1d4-0 cpGwbg"
         >
           <h1
-            class="Header__HeaderTitle-oil6jy-0 cZfvjy"
+            class="Header__HeaderTitle-oil6jy-0 bpCTa-D"
           >
             Ticket Finder
           </h1>
         </div>
-        <div>
-          Ticket Finder
+        <div
+          class="StyledBox-sc-13pk1d4-0 fHBcfC"
+        >
+          <main
+            class="StyledBox-sc-13pk1d4-0 jDakHy"
+          >
+            <h1
+              class="StyledHeading-sc-1rdh4aw-0 dcjdFF"
+            >
+              Busque por uma banda ou artista
+            </h1>
+            <p
+              class="StyledParagraph-tbetod-0 dRiYAb"
+            >
+              Iremos mostrar ingressos e videos do seu artista preferido :)
+            </p>
+          </main>
         </div>
       </div>
     </div>

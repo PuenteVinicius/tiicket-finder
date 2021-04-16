@@ -8,6 +8,7 @@ const HeaderTitle = styled.h1`
   text-align: center;
   line-height: 36px;
   color: white;
+  font-size: 56px;
 `;
 
 function Header() {
