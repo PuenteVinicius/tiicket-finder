@@ -84,73 +84,6 @@ Object {
   font-weight: 600;
 }
 
-.c6 {
-  box-sizing: border-box;
-  font-size: inherit;
-  font-family: inherit;
-  border: none;
-  -webkit-appearance: none;
-  background: transparent;
-  color: inherit;
-  width: 100%;
-  padding: 11px;
-  font-weight: 600;
-  margin: 0;
-  border: 1px solid rgba(0,0,0,0.33);
-  border-radius: 4px;
-}
-
-.c6:focus {
-  outline: none;
-  box-shadow: 0 0 2px 2px #6FFFB0;
-}
-
-.c6:focus > circle,
-.c6:focus > ellipse,
-.c6:focus > line,
-.c6:focus > path,
-.c6:focus > polygon,
-.c6:focus > polyline,
-.c6:focus > rect {
-  outline: none;
-  box-shadow: 0 0 2px 2px #6FFFB0;
-}
-
-.c6:focus::-moz-focus-inner {
-  border: 0;
-}
-
-.c6::-webkit-input-placeholder {
-  color: #AAAAAA;
-}
-
-.c6::-moz-placeholder {
-  color: #AAAAAA;
-}
-
-.c6:-ms-input-placeholder {
-  color: #AAAAAA;
-}
-
-.c6::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-.c6::-moz-focus-inner {
-  border: none;
-  outline: none;
-}
-
-.c6:-moz-placeholder,
-.c6::-moz-placeholder {
-  opacity: 1;
-}
-
-.c5 {
-  position: relative;
-  width: 100%;
-}
-
 .c3 {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
@@ -206,19 +139,7 @@ Object {
           </p>
           <div
             class="c4"
-          >
-            <div
-              class="c5"
-            >
-              <input
-                autocomplete="off"
-                class="c6"
-                data-testid="artist-input"
-                placeholder="Faça sua busca aqui..."
-                value=""
-              />
-            </div>
-          </div>
+          />
         </main>
       </div>
     </div>
@@ -242,19 +163,7 @@ Object {
         </p>
         <div
           class="StyledBox-sc-13pk1d4-0 ftafLo"
-        >
-          <div
-            class="StyledTextInput__StyledTextInputContainer-sc-1x30a0s-1 cnyLED"
-          >
-            <input
-              autocomplete="off"
-              class="StyledTextInput-sc-1x30a0s-0 evYMFd"
-              data-testid="artist-input"
-              placeholder="Faça sua busca aqui..."
-              value=""
-            />
-          </div>
-        </div>
+        />
       </main>
     </div>
   </div>,

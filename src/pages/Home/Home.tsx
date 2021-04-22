@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Main, Heading, Paragraph } from "grommet";
 import ArtistInput from "./ArtistInput/ArtistInput";
+import { FeatureTogglesContext } from "../../FeatureTogglesContext";
 
 function Home() {
   return (
@@ -23,7 +24,11 @@ function Home() {
           alignSelf="center"
           align="center"
         >
-          <ArtistInput />
+          <FeatureTogglesContext.Consumer>
+            {({ searchArtist }: any) =>
+              searchArtist === "true" ? <ArtistInput /> : null
+            }
+          </FeatureTogglesContext.Consumer>
         </Box>
       </Main>
     </Box>

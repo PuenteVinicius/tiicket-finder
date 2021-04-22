@@ -1,5 +1,5 @@
 import React from 'react'
 
-const FeatureTogglesContext = React.createContext({})
+const FeatureTogglesContext: any = React.createContext({})
 
 export { FeatureTogglesContext }
