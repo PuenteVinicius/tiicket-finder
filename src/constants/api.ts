@@ -1,20 +1,10 @@
-const Api = {
-  url: process.env.REACT_APP_API_URL,
+const TicketMaster = {
+  url: process.env.REACT_APP_TM_URL,
+  apiKey: process.env.REACT_APP_TM_CONSUMER_KEY,
   paths: {
-    providers: '/professionals/',
+    atractionKeyword: '.json?size=1&apikey=' + process.env.REACT_APP_TM_CONSUMER_KEY + '&keyword=', 
+    atractionId: '.json?apikey=' + process.env.REACT_APP_TM_CONSUMER_KEY,
   },
 }
 
-const Cep = {
-  url: 'https://viacep.com.br/ws',
-  returnType: 'json/',
-}
-
-const IbgeService = {
-  url: 'https://servicodados.ibge.gov.br/api/v1/localidades/estados',
-  paths: {
-    providers: '/municipios',
-  },
-}
-
-export { Api, Cep, IbgeService }
+export { TicketMaster }
