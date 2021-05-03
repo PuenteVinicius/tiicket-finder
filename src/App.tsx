@@ -10,7 +10,6 @@ import { toggles } from './constants'
 function App() {
   return (
     <div className="App">
-      {console.log(toggles)}
       <GlobalStyle />
       <Grommet theme={DEFAULT_THEME}>
         <FeatureTogglesContext.Provider value={toggles}>
