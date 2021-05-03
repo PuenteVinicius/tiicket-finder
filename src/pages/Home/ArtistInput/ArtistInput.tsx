@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { TextInput, Box } from "grommet";
+import { TextInput } from "grommet";
 
-const ArtistInput = () => {
-  const [artistNameState, setArtistNameState] = useState({ artistName: "" });
+const ArtistInput = ({ callback }: any) => {
+  
+  const [artistNameState, setArtistNameState] = useState({ artistName: "" })
 
   const artistNameChangeHandler = (event: any) => {
-    const changedArtistName: string = event.target.value;
-    setArtistNameState({ artistName: changedArtistName });
+    const changedArtistName: string = event.target.value
+    setArtistNameState({ artistName: changedArtistName })
+    callback(artistNameState.artistName)
   };
 
   return (
