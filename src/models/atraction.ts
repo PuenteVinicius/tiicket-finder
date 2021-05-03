@@ -1,11 +1,11 @@
 export default interface IAtraction {
-  name: string,
-  type: string,
-  id: string,
-  url: string,
-  externalLinks: IAtractionExternalLinks,
-  images: IAtractionImages[]
-  classifications: IAtractionClassifications[],
+  name?: string,
+  type?: string,
+  id?: string,
+  url?: string,
+  externalLinks?: IAtractionExternalLinks,
+  images?: IAtractionImages[]
+  classifications?: IAtractionClassifications[],
 }
 
 interface IAtractionExternalLinks {
