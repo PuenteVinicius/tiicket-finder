@@ -1,14 +1,20 @@
-import Axios from 'axios'
-import { TicketMaster } from '../../constants/api'
-import { toggles } from '../../constants/featureToggles'
-import IAtraction from '../../models/atraction';
+import Axios from "axios";
+import IAtraction from "../../models/atraction";
+import { TicketMaster } from "../../constants/api";
+import { toggles } from "../../constants/featureToggles";
+import { verifyTextLeng } from "../../utils/helper";
 
 const TicketMasterApi = {
-  getAttractionByKeyword: async (keyword:string): Promise<IAtraction | undefined> => {
+  getAttractionByKeyword: async (
+    keyword: string
+  ): Promise<IAtraction | undefined> => {
+    if (!verifyTextLeng(keyword)) return;
     let atraction: IAtraction = {};
-    if(toggles.apiIntegration) {
-      const response: any = await Axios.get(TicketMaster.url + TicketMaster.paths.atractionKeyword + keyword);
-      if(response.data._embedded) {
+    if (toggles.apiIntegration) {
+      const response: any = await Axios.get(
+        TicketMaster.url + TicketMaster.paths.atractionKeyword + keyword
+      );
+      if (response.data._embedded) {
         const { attractions }: any = response.data._embedded;
         atraction = attractions[0];
       }
@@ -16,15 +22,13 @@ const TicketMasterApi = {
     return atraction;
   },
 
-  getAttractionById: async (id: string): Promise<IAtraction | undefined> => {
-    let atraction: IAtraction = {};
-    if(toggles.apiIntegration) {
-      const response = await Axios.get(TicketMaster.url + '/' + id + TicketMaster.paths.atractionId);
-      if(response.data) {
-        atraction = response.data;
-      }
+  getArtist: async (keyword: string): Promise<IAtraction> => {
+    let artist: IAtraction = {};
+    const response: any = await TicketMasterApi.getAttractionByKeyword(keyword);
+    if (response) {
+      artist = response;
     }
-    return atraction;
+    return artist;
   },
-}
-export default TicketMasterApi
+};
+export default TicketMasterApi;
