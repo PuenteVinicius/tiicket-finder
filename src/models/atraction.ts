@@ -28,6 +28,11 @@ interface IAtractionExternalLinks {
     {
       url: string
     }
+  ],
+  instagram: [
+    {
+      url: string
+    }
   ]
 }
 
@@ -42,9 +47,21 @@ interface IAtractionImages {
 interface IAtractionClassifications {
   primary: boolean,
   segment: IClassificationsSegment
+  genre: IGenre,
+  subGenre: IGenre,
+  type: IType,
+  subType: IType,
 }
 
 interface IClassificationsSegment {
   id: string, 
   name: string,
+}
+
+interface IGenre {
+  name: string
+}
+
+interface IType {
+  name: string
 }
