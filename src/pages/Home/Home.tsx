@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Main, Heading, Paragraph } from "grommet";
 import ArtistInput from "./ArtistInput/ArtistInput";
 import { FeatureTogglesContext } from "../../FeatureTogglesContext";
+import TicketMasterApi from "../../api/ticket-master/ticket-master";
+import IAtraction from "../../models/atraction";
 
-function Home() {
+const Home = () => {
+  const [artistState, setArtistState] = useState({});
+
+  const setArtist = async (keyword: string) => {
+    let artist: IAtraction = await TicketMasterApi.getArtist(keyword);
+    if (artist) {
+      setArtistState(artist);
+    }
+  };
+
   return (
     <Box
       direction="row"
@@ -26,13 +37,15 @@ function Home() {
         >
           <FeatureTogglesContext.Consumer>
             {({ searchArtist }: any) =>
-              searchArtist === "true" ? <ArtistInput /> : null
+              searchArtist === "true" ? (
+                <ArtistInput callback={setArtist} />
+              ) : null
             }
           </FeatureTogglesContext.Consumer>
         </Box>
       </Main>
     </Box>
   );
-}
+};
 
 export default Home;
