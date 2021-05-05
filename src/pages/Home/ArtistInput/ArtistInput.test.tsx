@@ -4,6 +4,8 @@ import TicketMasterApi from "../../../api/ticket-master/ticket-master";
 import ArtistInput from "./ArtistInput";
 import useDebounce from "../../../utils/hooks";
 
+const DEBOUNCE_DELAY = 3000;
+
 const setArtist = async (keyword: string) => {
   return await TicketMasterApi.getArtist(keyword);
 };
@@ -31,8 +33,8 @@ describe("ArtistInput component", () => {
       fireEvent.change(input, { target: { value: ARTIST_NAME } });
       expect(artistInput.getByDisplayValue(ARTIST_NAME)).toBeInTheDocument();
       setTimeout(() => {
-        expect(useDebounce({}, 500)).toBeCalledTimes(1);
-      }, 3000)
+        expect(useDebounce({}, DEBOUNCE_DELAY)).toBeCalledTimes(1);
+      }, DEBOUNCE_DELAY);
     });
   });
 });
