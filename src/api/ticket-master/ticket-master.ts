@@ -1,7 +1,6 @@
 import Axios from "axios";
 import IAtraction from "../../models/atraction";
 import { TicketMaster } from "../../constants/api";
-import { toggles } from "../../constants/featureToggles";
 import { verifyTextLeng } from "../../utils/helper";
 
 const TicketMasterApi = {
@@ -10,15 +9,14 @@ const TicketMasterApi = {
   ): Promise<IAtraction | undefined> => {
     if (!verifyTextLeng(keyword)) return;
     let atraction: IAtraction = {};
-    if (toggles.apiIntegration) {
-      const response: any = await Axios.get(
-        TicketMaster.url + TicketMaster.paths.atractionKeyword + keyword
-      );
-      if (response.data._embedded) {
-        const { attractions }: any = response.data._embedded;
-        atraction = attractions[0];
-      }
+    const response: any = await Axios.get(
+      TicketMaster.url + TicketMaster.paths.atractionKeyword + keyword
+    );
+    if (response.data._embedded) {
+      const { attractions }: any = response.data._embedded;
+      atraction = attractions[0];
     }
+
     return atraction;
   },
 
