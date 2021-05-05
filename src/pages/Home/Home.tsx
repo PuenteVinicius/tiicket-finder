@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { Box, Main, Heading, Paragraph } from "grommet";
 import ArtistInput from "./ArtistInput/ArtistInput";
-import { FeatureTogglesContext } from "../../FeatureTogglesContext";
 import TicketMasterApi from "../../api/ticket-master/ticket-master";
 import IAtraction from "../../models/atraction";
 
@@ -35,13 +34,7 @@ const Home = () => {
           alignSelf="center"
           align="center"
         >
-          <FeatureTogglesContext.Consumer>
-            {({ searchArtist }: any) =>
-              searchArtist === "true" ? (
-                <ArtistInput callback={setArtist} />
-              ) : null
-            }
-          </FeatureTogglesContext.Consumer>
+          <ArtistInput callback={setArtist} />
         </Box>
       </Main>
     </Box>
