@@ -1,5 +1,5 @@
 const toggles = {
-  apiIntegration: process.env.REACT_APP_FEATURE_INTEGRATION,
+  cardArtist: process.env.REACT_APP_CARD_ARTIST
 }
 
 export { toggles }

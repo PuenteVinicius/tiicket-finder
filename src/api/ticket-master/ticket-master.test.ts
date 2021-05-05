@@ -42,7 +42,7 @@ describe("Artist", () => {
   });
   it("When artist endpoint returns an error", () => {
     const mockTicketMasterApi = jest.spyOn(TicketMasterApi, "getArtist");
-    const getArtist = () => {
+    const getArtist = ():any => {
       return Error;
     };
     mockTicketMasterApi.mockReturnValue(getArtist());

@@ -7,4 +7,11 @@ const TicketMaster = {
   },
 }
 
-export { TicketMaster }
+const Youtube = {
+  url: process.env.REACT_APP_YT_BASE,
+  apiKey: process.env.REACT_APP_YT_KEY,
+  paths: {
+    search: process.env.REACT_APP_YT_BASE + 'search?part=snippet&order=viewCount&type=video&videoDefinition=high&key=' + process.env.REACT_APP_YT_KEY + '&q=', 
+  },
+}
+export { TicketMaster, Youtube }
