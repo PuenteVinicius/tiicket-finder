@@ -20,18 +20,18 @@ export interface IYoutubeVideos {
   snippet: ISnippet;
 }
 
-interface ISnippet {
+export interface ISnippet {
   publishedAt: string;
   channelId: string;
   title: string;
   description: string;
-  thumbnails: IThumbnail[];
+  thumbnails: IThumbnail;
   channelTitle: string;
   liveBroadcastContent: string;
   publishTime: string;
 }
 
-interface IThumbnail {
+export interface IThumbnail {
   default: IThumbnailDetail;
   medium: IThumbnailDetail;
   high: IThumbnailDetail;
@@ -42,9 +42,3 @@ interface IThumbnailDetail {
   width: number;
   height: number;
 }
-
-interface IClassificationsSegment {}
-
-interface IGenre {}
-
-interface IType {}
