@@ -160,6 +160,22 @@ Object {
   max-width: 432px;
 }
 
+.c7 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-flow: row;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  text-align: center;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width:768px) {
   .c0 {
     padding: 24px;
@@ -219,6 +235,9 @@ Object {
               />
             </div>
           </div>
+          <div
+            class="c7"
+          />
         </main>
       </div>
     </div>
@@ -255,6 +274,9 @@ Object {
             />
           </div>
         </div>
+        <div
+          class="sc-bdvvaa elOObC"
+        />
       </main>
     </div>
   </div>,

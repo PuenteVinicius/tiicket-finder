@@ -20,9 +20,9 @@ Object {
   -webkit-align-content: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  background-color: #7D4CDB;
+  background-color: #000000;
   color: #f8f8f8;
-  border: solid 12px #7D4CDB;
+  border: solid 12px #000000;
   min-width: 0;
   min-height: 0;
   -webkit-flex-direction: row;
@@ -46,7 +46,7 @@ Object {
 
 @media only screen and (max-width:768px) {
   .c0 {
-    border: solid 6px #7D4CDB;
+    border: solid 6px #000000;
   }
 }
 
@@ -71,7 +71,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="StyledBox-sc-13pk1d4-0 gczVjq"
+      class="StyledBox-sc-13pk1d4-0 kMQXig"
     >
       <h1
         class="Header__HeaderTitle-oil6jy-0 jhEtyR"
