@@ -3,7 +3,7 @@ const ARTIST_NAME = "Ariana Grande";
 const ARTIST_ID = "K8vZ9172Qo7";
 
 describe("Artist", () => {
-  jest.setTimeout(6000);
+  jest.setTimeout(1200);
   it("Correct artist information must show correct values", async () => {
     const attraction = await TicketMasterApi.getArtist(ARTIST_NAME);
 

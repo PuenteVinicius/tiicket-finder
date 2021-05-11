@@ -7,7 +7,7 @@ import YoutubeApi from "./youtube";
 const KEYWORD = "arianagrande";
 
 describe("Youtube API", () => {
-  jest.setTimeout(6000);
+  jest.setTimeout(1200);
 
   it("Should return a list with videos of artist", async () => {
     const artist: IYTAPIResponse = await YoutubeApi.getArtistVideos(KEYWORD);
