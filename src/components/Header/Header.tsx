@@ -12,16 +12,16 @@ const HeaderTitle = styled.h1`
   line-height: 56px;
 `;
 
-function Header() {
+const Header = () => {
   return (
     <Box
       direction="row"
-      border={{ color: "brand", size: "large" }}
+      border={{ color: "black", size: "large" }}
       pad="xlarge"
       align="center"
       alignContent="center"
       alignSelf="center"
-      background="brand"
+      background="black"
     >
       <HeaderTitle>Ticket Finder</HeaderTitle>
     </Box>

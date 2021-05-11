@@ -4,7 +4,7 @@ import TicketMasterApi from "../../../api/ticket-master/ticket-master";
 import ArtistInput from "./ArtistInput";
 import useDebounce from "../../../utils/hooks";
 
-const DEBOUNCE_DELAY = 3000;
+const DEBOUNCE_DELAY = 800;
 
 const setArtist = async (keyword: string) => {
   return await TicketMasterApi.getArtist(keyword);
