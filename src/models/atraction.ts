@@ -8,7 +8,7 @@ export default interface IAtraction {
   classifications?: IAtractionClassifications[],
 }
 
-interface IAtractionExternalLinks {
+export interface IAtractionExternalLinks {
   youtube: [
     {
       url: string
@@ -36,7 +36,7 @@ interface IAtractionExternalLinks {
   ]
 }
 
-interface IAtractionImages {
+export interface IAtractionImages {
   ratio: string,
   url: string,
   width: number, 
@@ -44,7 +44,7 @@ interface IAtractionImages {
   fallback: false, 
 }
 
-interface IAtractionClassifications {
+export interface IAtractionClassifications {
   primary: boolean,
   segment: IClassificationsSegment
   genre: IGenre,
