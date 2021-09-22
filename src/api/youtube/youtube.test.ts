@@ -2,7 +2,7 @@ import IYTAPIResponse, {
   ISnippet,
   IThumbnail,
   IYoutubeVideos,
-} from "../../models/youtube";
+} from "../../domain/youtube";
 import YoutubeApi from "./youtube";
 const KEYWORD = "arianagrande";
 

@@ -3,7 +3,7 @@ import { Box, Main, Heading, Paragraph, Spinner } from "grommet";
 import ArtistInput from "./ArtistInput/ArtistInput";
 import Artist from "./Artist/Artist";
 import TicketMasterApi from "../../api/ticket-master/ticket-master";
-import IAtraction from "../../models/atraction";
+import IAtraction from "../../domain/atraction";
 import { FeatureTogglesContext } from "../../FeatureTogglesContext";
 import styled from "styled-components";
 

@@ -1,7 +1,7 @@
 import Axios from "axios";
 import { Youtube } from "../../constants/api";
 import { verifyTextLeng } from "../../utils/helper";
-import IYTAPIResponse from "../../models/youtube";
+import IYTAPIResponse from "../../domain/youtube";
 
 const YoutubeApi = {
   getArtistVideosByKeyword: async (

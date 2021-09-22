@@ -1,5 +1,5 @@
 import Axios from "axios";
-import IAtraction from "../../models/atraction";
+import IAtraction from "../../domain/atraction";
 import { TicketMaster } from "../../constants/api";
 import { verifyTextLeng } from "../../utils/helper";
 

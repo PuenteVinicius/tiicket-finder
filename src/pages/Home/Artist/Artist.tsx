@@ -1,6 +1,6 @@
 import { Box, Grid, Heading, Text, Button } from "grommet";
-import IArtist from "../../../models/artist";
-import { IAtractionClassifications } from "../../../models/atraction";
+import IArtist from "../../../domain/artist";
+import { IAtractionClassifications } from "../../../domain/atraction";
 
 const Artist = (props: IArtist) => {
   let highlightImage: string = "";

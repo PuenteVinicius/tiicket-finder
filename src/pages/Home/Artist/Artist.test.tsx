@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import "jest-styled-components";
 import TicketMasterApi from "../../../api/ticket-master/ticket-master";
-import IAtraction from "../../../models/atraction";
+import IAtraction from "../../../domain/atraction";
 import Artist from "./Artist";
 
 const ARTIST_NAME = "Dua Lipa";
